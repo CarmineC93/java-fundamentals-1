@@ -1,5 +1,6 @@
 package org.lessons.java;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class TicketCost {
@@ -33,6 +34,8 @@ public class TicketCost {
             ticketPrice *= 0.6;
         }
 
-        System.out.println(ticketPrice + " euro");
+        DecimalFormat df = new DecimalFormat("0.00");
+
+        System.out.println(df.format(ticketPrice) + " euro");
     }
 }
